@@ -21,9 +21,9 @@ function blockly() {
       'Blockly.Block.prototype.jsonInitStyle_=function(){}'))
     .pipe(insert.wrap(`
       ${document}
-      var xmlshim = require('xmlshim');
-      var XMLSerializer = xmlshim.XMLSerializer;
-      var DOMParser = xmlshim.DOMParser; 
+      var xmldom = require('xmldom');
+      var XMLSerializer = xmldom.XMLSerializer;
+      var DOMParser = xmldom.DOMParser; 
       module.exports = (function(){ // `,
       //....ORIGINAL CODE....
       `Blockly.goog=goog;return Blockly;
