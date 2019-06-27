@@ -31,5 +31,6 @@ node_modules
 
 test/browser
 
-
+blockly/*
+closure-library
 
